@@ -1,28 +1,38 @@
-Live Chat Application (Go + React)
-This repository contains a complete live chat application, featuring a Golang backend and a React frontend. It provides a real-time messaging experience for users.
+# 💬 Live Chat Application
 
-Features
-Real-time Messaging: Instant message exchange using WebSockets.
+A real-time chat application built with **Go (Golang)** for the backend and **React.js** for the frontend using **WebSockets**.
 
-Multi-user Support: Multiple users can chat simultaneously.
+## 🚀 Features
 
-User-Friendly Interface: Simple and intuitive UI built with React.
+- 🔗 Real-time bi-directional messaging using WebSocket
+- 📦 Organized backend with Gorilla WebSocket
+- ⚛️ Responsive React frontend
+- 🔒 Graceful connection handling (connect/disconnect)
+- 💬 Broadcast messages to all connected clients
 
-Efficient Backend: Fast and reliable message handling leveraging Golang's concurrency model.
+---
 
-Technologies Used
-Backend (Golang):
+## 🛠️ Technologies Used
 
-Go: For robust and efficient backend logic.
+### 🔧 Backend (Golang)
+- Go (Golang)
+- Gorilla WebSocket
+- Custom WebSocket Pool & Client handling
 
-Gorilla WebSocket: Popular library for WebSocket handling.
+### 🎨 Frontend (React)
+- React.js 
+- WebSocket
 
-Frontend (React):
+---
 
-React: For building fast and interactive user interfaces.
+## 📂 Project Structure
+/backend
+└── main.go
+└── coustomWebsocket/
+├── client.go
+├── pool.go
+└── ...
 
-Vite: For a lightning-fast development server and build tool.
-
-Axios: HTTP client for making API calls.
-
-Tailwind CSS (Optional): For styling (if you've used it).
+/frontend
+└── src/
+├── App.js
